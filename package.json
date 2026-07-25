@@ -1,37 +1,58 @@
 {
-  "name": "awesomplete",
-  "version": "1.1.7",
-  "description": "https://projects.verou.me/awesomplete/",
-  "main": "awesomplete.js",
-  "scripts": {
-    "release": "release-it",
-    "test": "karma start --single-run"
-  },
-  "repository": "LeaVerou/awesomplete",
-  "author": "Lea Verou",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LeaVerou/awesomplete/issues"
-  },
-  "homepage": "https://leaverou.github.io/awesomplete/",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-header": "^1.7.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.19",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-coverage": "^0.5.3",
-    "karma-fixture": "^0.2.5",
-    "karma-html2js-preprocessor": "^0.1.0",
-    "karma-jasmine": "^0.3.6",
-    "karma-jasmine-def": "^0.1.0",
-    "release-it": "^17.6.0"
-  },
-  "overrides": {
-    "graceful-fs": "^4.2.11"
-  }
+	"name": "awesomplete",
+	"version": "1.1.7",
+	"description": "Ultra lightweight, usable, beautiful autocomplete with zero dependencies.",
+	"keywords": [
+		"autocomplete",
+		"combobox",
+		"completion",
+		"suggestions",
+		"dropdown",
+		"accessibility",
+		"a11y",
+		"zero-dependencies"
+	],
+	"homepage": "https://projects.verou.me/awesomplete/",
+	"bugs": {
+		"url": "https://github.com/nudeui/awesomplete/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nudeui/awesomplete.git"
+	},
+	"license": "MIT",
+	"author": "Lea Verou",
+	"main": "awesomplete.js",
+	"files": [
+		"awesomplete.js",
+		"awesomplete.min.js",
+		"awesomplete.base.css",
+		"awesomplete.theme.css"
+	],
+	"scripts": {
+		"build": "terser awesomplete.js -c -m --comments '/Lea Verou/' -o awesomplete.min.js",
+		"test": "karma start --single-run",
+		"format": "prettier --write .",
+		"prepublishOnly": "npm run build",
+		"release": "npm whoami >/dev/null 2>&1 || npm login && release-it"
+	},
+	"devDependencies": {
+		"jasmine-core": "^2.4.1",
+		"karma": "^0.13.19",
+		"karma-chrome-launcher": "^0.2.2",
+		"karma-coverage": "^0.5.3",
+		"karma-fixture": "^0.2.5",
+		"karma-html2js-preprocessor": "^0.1.0",
+		"karma-jasmine": "^0.3.6",
+		"karma-jasmine-def": "^0.1.0",
+		"prettier": "~3.5.3",
+		"prettier-plugin-brace-style": "latest",
+		"prettier-plugin-merge": "latest",
+		"prettier-plugin-space-before-function-paren": "latest",
+		"release-it": "latest",
+		"terser": "latest"
+	},
+	"overrides": {
+		"graceful-fs": "^4.2.11"
+	}
 }
