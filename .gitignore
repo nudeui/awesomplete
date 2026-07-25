@@ -1,2 +1,9 @@
-node_modules/
-coverage/
+node_modules
+.claude
+coverage
+
+# Build output (published to npm, not committed)
+awesomplete.min.js
+
+# Uncomment if repo is an app and not a library
+package-lock.json
