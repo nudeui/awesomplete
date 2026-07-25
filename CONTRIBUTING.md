@@ -47,13 +47,10 @@ See existing tests in ```test``` directory as an example. More expectations and 
 
 **Build**
 
-Run the build with the following command:
+Minify `awesomplete.js` into `awesomplete.min.js`:
 
 ```
-gulp
+npm run build
 ```
 
-The build will:
-
-1. Minify `awesomplete.js` and generate `awesomplete.min.js`.
-2. Merge `awesomplete.base.css` and `awesomplete.theme.css` and generate `awesomplete.css`.
+This runs automatically before publishing to npm. The stylesheets — `awesomplete.base.css` (required) and `awesomplete.theme.css` (default look) — ship as-is; there is no CSS build step.

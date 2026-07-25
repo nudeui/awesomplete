@@ -1,10 +1,7 @@
 # Awesomplete
 [![npm version](https://img.shields.io/npm/v/awesomplete.svg)](https://www.npmjs.com/package/awesomplete)
-[![Build Status](https://img.shields.io/travis/LeaVerou/awesomplete/gh-pages.svg)](https://travis-ci.org/LeaVerou/awesomplete)
-[![Code Climate](https://img.shields.io/codeclimate/github/LeaVerou/awesomplete.svg)](https://codeclimate.com/github/LeaVerou/awesomplete)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/LeaVerou/awesomplete.svg)](https://codeclimate.com/github/LeaVerou/awesomplete/coverage)
 
-https://leaverou.github.io/awesomplete/
+https://projects.verou.me/awesomplete/
 
 Awesomplete is an ultra lightweight, customizable, simple autocomplete widget with zero dependencies, built with modern standards for modern browsers.
 
@@ -31,10 +28,11 @@ More information about the npm package can be found [here](https://www.npmjs.com
 
 ## Basic Usage
 
-Before you try anything, you need to include awesomplete.css and awesomplete.js in your page, via the usual tags:
+Before you try anything, you need to include `awesomplete.base.css` (required), optionally `awesomplete.theme.css` (the default look), and `awesomplete.js` in your page, via the usual tags:
 
 ```html
-<link rel="stylesheet" href="awesomplete.css" />
+<link rel="stylesheet" href="awesomplete.base.css" />
+<link rel="stylesheet" href="awesomplete.theme.css" />
 <script src="awesomplete.js" async></script>
 ```
 
@@ -98,11 +96,11 @@ details.
 
 ## Links
 
-The official site for the library is at <https://leaverou.github.io/awesomplete/>.
+The official site for the library is at <https://projects.verou.me/awesomplete/>.
 
 Documentation for the API and other topics is at
-<https://leaverou.github.io/awesomplete/#api>.
+<https://projects.verou.me/awesomplete/#api>.
 
 Created by Lea Verou and other fantastic contributors.
 
-[1]: https://github.com/LeaVerou/awesomplete/blob/gh-pages/LICENSE
+[1]: https://github.com/nudeui/awesomplete/blob/main/LICENSE

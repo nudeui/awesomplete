@@ -5,7 +5,8 @@
 <meta charset="utf-8" />
 <title>Awesomplete: Ultra lightweight, highly customizable, simple autocomplete, by Lea Verou</title>
 <link rel="stylesheet" href="prism/prism.css" />
-<link rel="stylesheet" href="awesomplete.css" />
+<link rel="stylesheet" href="awesomplete.base.css" />
+<link rel="stylesheet" href="awesomplete.theme.css" />
 <link rel="stylesheet" href="style.css" />
 
 <script src="awesomplete.js"></script>
@@ -44,7 +45,7 @@
 <section id="basic-usage">
 
 <h1>Basic usage</h1>
-<p>Before you try anything, you need to include <code>awesomplete.css</code> and <code>awesomplete.js</code> in your page, via the usual <code>&lt;link rel="stylesheet" href="awesomplete.css" /></code> and <code>&lt;script src="awesomplete.js" async>&lt;/script></code> tags.</p>
+<p>Before you try anything, you need to include <code>awesomplete.base.css</code> (required), optionally <code>awesomplete.theme.css</code> (the default look), and <code>awesomplete.js</code> in your page, via the usual <code>&lt;link rel="stylesheet" /></code> and <code>&lt;script src="awesomplete.js" async>&lt;/script></code> tags.</p>
 
 <p>For the autocomplete, you just need an <code>&lt;input></code> text field (might work on <code>&lt;textarea></code> and elements with <code>contentEditable</code>, but that hasn’t been tested). Add <code>class="awesomplete"</code> for it to be <strong>automatically processed</strong> (you can still specify many options via HTML attributes), otherwise you can instantiate with a few lines of JS code, which allow for more customization.</p>
 <p>There are many ways <strong>to link an input to a list of suggestions</strong>. The simple example above could have also been made with the following markup, which provides a nice native fallback in case the script doesn’t load:</p>
@@ -505,11 +506,11 @@ Awesomplete.$('.dropdown-btn').addEventListener("click", function() {
 	<h1>Download!</h1>
 
 	<ul>
-		<li><strong><a href="https://github.com/LeaVerou/awesomplete/archive/gh-pages.zip">Download everything as a zip file</a></strong></li>
-		<li><a href="https://github.com/LeaVerou/awesomplete">Fork me on Github</a></li>
-		<li><a href="https://github.com/LeaVerou/awesomplete/issues/new">File a bug</a> </li>
-		<li><a href="https://github.com/LeaVerou/awesomplete/issues/new">Suggest a feature</a> </li>
-		<li><a href="https://github.com/LeaVerou/awesomplete/blob/gh-pages/LICENSE">License: MIT license</a></li>
+		<li><strong><a href="https://github.com/nudeui/awesomplete/archive/refs/heads/main.zip">Download everything as a zip file</a></strong></li>
+		<li><a href="https://github.com/nudeui/awesomplete">Fork me on Github</a></li>
+		<li><a href="https://github.com/nudeui/awesomplete/issues/new">File a bug</a> </li>
+		<li><a href="https://github.com/nudeui/awesomplete/issues/new">Suggest a feature</a> </li>
+		<li><a href="https://github.com/nudeui/awesomplete/blob/main/LICENSE">License: MIT license</a></li>
 	</ul>
 
 	<p><strong>Pull requests are very welcome</strong>, as long as you maintain the code style and ask before adding tons of LOCs to the codebase!</p>
